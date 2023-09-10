@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class EndpointController {
     
     @GetMapping("")
-
     public Student myEndpoint(@RequestParam(value="slack_name") String slack_name, @RequestParam(value="track") String track){
         Student student = new Student(slack_name,track);
         return student;
