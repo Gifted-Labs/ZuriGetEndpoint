@@ -25,8 +25,8 @@ public class Student {
         this.current_day = dayOfWeek();
         this.utc_time = formatUtcTime();
         this.track = track;
-        this.github_file_url = "";
-        this.github_repo_url = "https://github.com/Gifted-Labs/EnpointAPI.git";
+        this.github_file_url = "https://github.com/Gifted-Labs/ZuriGetEndpoint/blob/bf79a813c2338dd4193ccc42f2b52c46735b8662/src/main/java/com/internship/systemsguy/endpoint/EndpointApplication.java";
+        this.github_repo_url = "https://github.com/Gifted-Labs/ZuriGetEndpoint.git";
         this.status_code = 200;
     }
 
