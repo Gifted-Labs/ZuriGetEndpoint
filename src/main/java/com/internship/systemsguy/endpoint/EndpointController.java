@@ -1,5 +1,6 @@
 package com.internship.systemsguy.endpoint;
 
+import com.internship.systemsguy.student.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class EndpointController {
     
     @GetMapping("/name")
-    public String getName(){
-        return "Julius Adjetey Sowah";
+    public Student getDetails(){
+        Student student = new Student("Julius","backend");
+        return student;
     }
 }
