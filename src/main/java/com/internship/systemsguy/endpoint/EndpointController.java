@@ -20,6 +20,13 @@ The class has a single endpoint  /api  which is mapped to the  myEndpoint  metho
 
 public class EndpointController {
     
+
+    /**
+     * Inside the  myEndpoint  method, a new  Student  object is created with the provided  slack_name  * and  track . The  Student  class is assumed to be defined elsewhere. 
+     * @param slack_name
+     * @param track
+     * @return
+     */
     @GetMapping("/api")
     public Student myEndpoint(@RequestParam(value="slack_name") String slack_name, @RequestParam(value="track") String track){
         Student student = new Student(slack_name,track);
