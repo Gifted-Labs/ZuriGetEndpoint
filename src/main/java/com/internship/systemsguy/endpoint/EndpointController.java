@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("")
 
 public class EndpointController {
     
-    @GetMapping("")
+    @GetMapping("/api")
     public Student myEndpoint(@RequestParam(value="slack_name") String slack_name, @RequestParam(value="track") String track){
         Student student = new Student(slack_name,track);
         return student;
