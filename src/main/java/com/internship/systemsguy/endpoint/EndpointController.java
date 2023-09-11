@@ -16,7 +16,7 @@ The class has a single endpoint  /api  which is mapped to the  myEndpoint  metho
 */
 
 @RestController
-@RequestMapping("")
+@RequestMapping("/")
 
 public class EndpointController {
     
