@@ -16,7 +16,7 @@ The class has a single endpoint  /api  which is mapped to the  myEndpoint  metho
 */
 
 @RestController
-
+@RestMapping("/api")
 public class EndpointController {
     
 
@@ -26,7 +26,7 @@ public class EndpointController {
      * @param track
      * @return
      */
-    @GetMapping("/api")
+    @GetMapping("")
     public Student myEndpoint(@RequestParam(value="slack_name") String slack_name, @RequestParam(value="track") String track){
         Student student = new Student(slack_name,track);
         return student;
